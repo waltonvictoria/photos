@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photos</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="espera">
+        <h1>Aguarda mientras carga ...</h1>
+    </div>
+            
+    <header id="cab">
+        <i class="fas fa-bars" id="menu"></i>
+        <nav id="navfav">
+            <ul></ul>
+        </nav>
+
+        <h1 id="titu">Fotos 2018</h1>
+        <select name="" id="elegiralbum" onchange="filtrarImg()">
+            <option value="0">Elegir...</option>
+            <option value="1">Album 1</option>
+            <option value="2">Album 2</option>
+            <option value="3">Album 3</option>
+            <option value="4">Album 4</option>
+            <option value="5">Album 5</option>
+            <option value="6">Album 6</option>
+            <option value="7">Album 7</option>
+            <option value="8">Album 8</option>
+            <option value="9">Album 9</option>
+            <option value="10">Album 10</option>
+        </select>
+    </header>
+
+    <div id="contenedor">
+    </div>
+    <div id="imggrande">
+        <img src="http://via.placeholder.com/360x360">
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
